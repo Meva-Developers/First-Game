@@ -1,0 +1,63 @@
+<meta charset="utf-8">
+
+<h1>ENCARE ESSE DESAFIO AGORA! </h1>
+<h>Digite seu número </h>
+
+<body background="img/mmd.png">
+
+<input/>
+
+<button>Clique para descobrir</button>
+
+
+<script>
+
+	function pulaLinha(){
+	
+	document.write("<br><br>");
+	document.write("<br><br>");
+	document.write("<br><br>");
+	}
+
+	pulaLinha();
+
+alert("QUERO VER SE VOCÊ É CAPAZ DE DESCOBRIR O NÚMERO QUE ESTOU PENSANDO AGORA!! :D");
+
+	
+	var segredo = Math.round(Math.random() * 10);
+
+	var input = document.querySelector("input");
+	
+	input.focus();
+
+	var button = document.querySelector("button");
+	
+	button.onclick = verifica;
+
+
+
+
+function verifica() {
+
+		if(input.value == segredo) {
+		
+		alert("PARABÉNS!! VOCÊ CONSEGUIU DESCOBRIR MEU NÚMERO!!");
+
+		}else {
+
+		alert("ERROU!! TENTE NOVAMENTE. ");
+
+
+
+	}
+
+
+	input.value = "";
+	input.focus();
+
+}
+
+
+</script>
+
+<h1>Meva Developers</h1>
